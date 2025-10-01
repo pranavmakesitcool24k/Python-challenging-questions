@@ -1,0 +1,19 @@
+'''
+Task 2
+Conditional Uppercase Conversion
+Write a program to convert a string to uppercase only if its length is more than 10 characters; 
+otherwise, display the string as is.
+
+Sample output:
+Enter a string: python programming  
+PYTHON PROGRAMMING  
+
+'''
+
+
+s = input("enter a string: ")
+
+# Check the length of the string
+if len(s) > 10:
+    s = s.upper()  # Convert to uppercase
+print(s)
