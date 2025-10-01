@@ -1,0 +1,36 @@
+'''
+Task 5
+Count Uppercase, Lowercase Letters, and Digits
+Write a program to count how many uppercase letters, lowercase letters, and digits are in a string.
+
+Sample output:
+Enter a string: PyTHon108  
+Uppercase letters: 3  
+Lowercase letters: 3  
+Digits: 3  
+
+
+'''
+str = input("Enter a string: ")
+up = 0
+low = 0
+num = 0
+
+for char in str:
+    if char.isupper():
+        up += 1 
+    elif char.islower():
+        low += 1
+    elif char.isdigit():
+        num += 1
+
+print("Upper: ",up)
+print("Lower: ",low)
+print("Digits: ",num)
+    
+    
+    
+    
+    
+    
+    
