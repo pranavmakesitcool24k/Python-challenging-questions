@@ -1,0 +1,13 @@
+Task 1
+Reverse a String
+Write a program to reverse a string without using str[::-1] or list.reverse()
+
+
+def reverse():
+    reversed_str = ""
+    for i in str:
+        reversed_str = i + reversed_str
+    return reversed_str
+
+str = "abcd"
+print(reverse())
