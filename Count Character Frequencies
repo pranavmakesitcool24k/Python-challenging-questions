@@ -1,0 +1,35 @@
+'''
+Task 6
+Count Character Frequencies
+Write a program to count character frequencies in a string.
+
+Sample output:
+Enter a string: hello  
+h : 1 time  
+e : 1 time  
+l : 2 times  
+o : 1 time  
+
+'''
+
+s = input("Enter a string: ")
+
+# Dictionary to store frequencies
+freq = {}
+
+# Loop through each character
+for char in s:
+    if char in freq:
+        freq[char] += 1
+    else:
+        freq[char] = 1
+
+# Display the results
+for char, count in freq.items():
+    if count == 1:
+        print(f"{char} : {count} time")
+    else:
+        print(f"{char} : {count} times")
+
+        
+        
